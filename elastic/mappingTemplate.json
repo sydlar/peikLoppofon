@@ -1,0 +1,35 @@
+{
+  "index_patterns": [
+    "test_google_forms*"
+  ],
+  "settings": {
+    "index": {
+      "number_of_shards": "0",
+      "number_of_replicas": "-1"
+    }
+  },
+  "mappings": {
+    "tst_type": {
+      "properties": {
+        "Adresse": {
+          "type": "text"
+        },
+        "Enda et spørsmåk": {
+          "type": "keyword"
+        },
+        "Sporsmol": {
+          "type": "text"
+        },
+        "Spørsmål": {
+          "type": "text"
+        },
+        "location": {
+          "type": "geo_point"
+        },
+        "timestamp": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}
